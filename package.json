@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/gozmanfaraday/etch-a-sketch-TOP/issues"
   },
-  "homepage": "https://github.com/gozmanfaraday/etch-a-sketch-TOP#readme"
+  "homepage": "https://github.com/gozmanfaraday/etch-a-sketch-TOP#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
 }

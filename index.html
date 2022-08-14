@@ -4,13 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Inconsolata&family=Silkscreen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <title>Etch-A-Sketch</title>
   </head>
 
-  <body>
-    <h1 class="text-green-500 text-8xl">
-      Hello world!
-    </h1>
+  <body class=" font-silk font-bold bg-almond space-y-6">
+    <!-- Etch-A-Sketch Title -->
+    <header id="eas-header" class="container mx-auto text-center text-6xl text-violet py-6">
+      <h1>
+        Etch-A-Sketch
+      </h1>
+    </header>
+
+    <!-- Etch-A-Sketch Body -->
+    <main id="eas-body" class="container mx-auto grid grid-cols-2">
+      <!-- Buttons -->
+      <div id="controls">
+        <input id="colorPicker" type="color" value="#4a0d67" />
+      </div>
+
+      <!-- Sketch Pad -->
+      <div id="sketch-pad" class="grid bg-white w-[500px] h-[500px] shadow-2xl">
+        
+      </div>
+    </main>
   </body>
 </html>

@@ -12,8 +12,18 @@ module.exports = {
       '2xl': '1800px',
     },
     extend: {
-      colors: {},
-      fontFamily: {},
+      colors: {
+        'almond': '#efdecd',
+        'lavender': '#b892ff',
+        'violet': '#4a0d67',
+        'malachite': '#0bda51',
+
+      },
+      fontFamily: {
+        silk: ['Silkscreen', 'cursive'],
+        dyna: ['DynaPuff', 'cursive'],
+        inconsolata: ['Inconsolata', 'monospace'],
+      },
     },
     colors: ({ colors }) => ({
       inherit: colors.inherit,

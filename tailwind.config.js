@@ -24,6 +24,10 @@ module.exports = {
         dyna: ['DynaPuff', 'cursive'],
         inconsolata: ['Inconsolata', 'monospace'],
       },
+      boxShadow: {
+        etch: '4px 4px 20px -3px rgb(74 13 103 / 0.5), -4px -4px 20px -3px rgb(74 13 103 / 0.5)',
+        pad: '0 12px 25px -3px rgb(74 13 103 / 0.3), 0 8px 10px -3px rgb(74 13 103 / 0.3)',
+      },
     },
     colors: ({ colors }) => ({
       inherit: colors.inherit,

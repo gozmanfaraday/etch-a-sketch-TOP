@@ -11,25 +11,59 @@
     <title>Etch-A-Sketch</title>
   </head>
 
-  <body class=" font-silk font-bold bg-almond space-y-6">
+  <body class="bg-almond font-bold flex flex-col justify-around gap-7">
     <!-- Etch-A-Sketch Title -->
-    <header id="eas-header" class="container mx-auto text-center text-6xl text-violet py-6">
+    <header id="eas-header" class="font-silk container mx-auto text-center text-6xl text-violet py-6">
       <h1>
         Etch-A-Sketch
       </h1>
     </header>
 
     <!-- Etch-A-Sketch Body -->
-    <main id="eas-body" class="container mx-auto grid grid-cols-2">
-      <!-- Buttons -->
-      <div id="controls">
-        <input id="colorPicker" type="color" value="#4a0d67" />
+    <main id="eas-body" class="font-inconsolata space-y-8">
+      <div class="container mx-auto grid grid-cols-3 justify-center items-center">
+        <!-- Color Picker -->
+        <div id="color-box" class="flex flex-col items-center justify-center gap-2 text-xl text-violet">
+          <input id="color-picker" class="w-20 h-20 transition hover:scale-105" type="color" value="#4a0d67"/>
+          <label for="color">Colour Picker</label>
+        </div>
+  
+        <!-- Sketch Pad -->
+        <div class="flex flex-col justify-center items-center gap-10 text-violet">
+          <div>
+            <div id="sketch-pad" class="grid bg-white w-[440px] h-[440px] shadow-pad outline outline-4 outline-violet"></div>
+          </div>
+        </div>
+  
+        <!-- Controls Buttons -->
+        <div id="control-buttons" class="flex flex-col items-center justify-center gap-8 text-violet text-lg">
+          <button class="bg-lavender w-56 py-3 rounded-full shadow-lg transition hover:scale-105 hover:shadow-xl active:scale-100">
+            Black Mode
+          </button>
+          <button class="bg-lavender w-56 py-3 rounded-full shadow-lg transition hover:scale-105 hover:shadow-xl active:scale-100">
+            Colour Picker Mode
+          </button>
+          <button class="bg-lavender w-56 py-3 rounded-full shadow-lg transition hover:scale-105 hover:shadow-xl active:scale-100">
+            Rainbow Mode
+          </button>
+          <button class="bg-lavender w-56 py-3 rounded-full shadow-lg transition hover:scale-105 hover:shadow-xl active:scale-100">
+            Shades Of Gray
+          </button>
+          <button class="bg-lavender w-56 py-3 rounded-full shadow-lg transition hover:scale-105 hover:shadow-xl active:scale-100">
+            Erase Sketch Pad
+          </button>
+        </div>
       </div>
 
-      <!-- Sketch Pad -->
-      <div id="sketch-pad" class="grid bg-white w-[500px] h-[500px] shadow-2xl">
-        
+      <!-- Range Slider -->
+      <div class="flex justify-center">
+        <div class="flex flex-col text-lg w-72 justify-center items-center gap-1 text-violet">
+          <input id="grid-size" type="range" min="1" max="100" value="16">
+          <label for="grid-size">Grid Size - 16 x 16</label>
+        </div>
       </div>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>

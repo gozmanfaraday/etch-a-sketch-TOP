@@ -21,7 +21,7 @@ module.exports = {
       },
       fontFamily: {
         silk: ['Silkscreen', 'cursive'],
-        dyna: ['DynaPuff', 'cursive'],
+        vt: ['VT323', 'monospace'],
         inconsolata: ['Inconsolata', 'monospace'],
       },
       boxShadow: {

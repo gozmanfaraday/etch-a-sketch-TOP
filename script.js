@@ -87,6 +87,9 @@ function determineButtonColor(e) {
   if (e.target.classList.contains('bg-violet')) {
     return;
   } else {
+    if (e.target.id === 'clear-mode') {
+      return;
+    }
     Array.from(controlButtons).forEach(button => {
       button.className = 'bg-lavender w-56 py-3 rounded-full shadow-lg transition hover:scale-105 hover:shadow-xl active:scale-100';
     });

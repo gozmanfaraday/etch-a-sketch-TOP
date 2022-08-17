@@ -17,7 +17,8 @@ module.exports = {
         'lavender': '#b892ff',
         'violet': '#4a0d67',
         'malachite': '#0bda51',
-
+        'darkGray': '#555555',
+        'lightGray': '#f1f1f1',
       },
       fontFamily: {
         silk: ['Silkscreen', 'cursive'],
@@ -25,8 +26,8 @@ module.exports = {
         inconsolata: ['Inconsolata', 'monospace'],
       },
       boxShadow: {
-        etch: '4px 4px 20px -3px rgb(74 13 103 / 0.5), -4px -4px 20px -3px rgb(74 13 103 / 0.5)',
-        pad: '0 12px 25px -3px rgb(74 13 103 / 0.3), 0 8px 10px -3px rgb(74 13 103 / 0.3)',
+        etch: '4px 4px 20px -3px rgb(0 0 0 / 0.5), -4px -4px 20px -3px rgb(0 0 0 / 0.5)',
+        pad: '0 12px 25px -3px rgb(0 0 0 / 0.3), 0 8px 10px -3px rgb(0 0 0 / 0.3)',
       },
     },
     colors: ({ colors }) => ({

@@ -694,14 +694,14 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-lavender {
-  --tw-bg-opacity: 1;
-  background-color: rgb(184 146 255 / var(--tw-bg-opacity));
-}
-
 .bg-violet {
   --tw-bg-opacity: 1;
   background-color: rgb(74 13 103 / var(--tw-bg-opacity));
+}
+
+.bg-lavender {
+  --tw-bg-opacity: 1;
+  background-color: rgb(184 146 255 / var(--tw-bg-opacity));
 }
 
 .py-6 {
@@ -745,6 +745,11 @@ video {
   font-weight: 700;
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-violet {
   --tw-text-opacity: 1;
   color: rgb(74 13 103 / var(--tw-text-opacity));
@@ -756,7 +761,7 @@ video {
 }
 
 .shadow-pad {
-  --tw-shadow: 0 12px 25px -3px rgb(74 13 103 / 0.3), 0 8px 10px -3px rgb(74 13 103 / 0.3);
+  --tw-shadow: 0 12px 25px -3px rgb(0 0 0 / 0.3), 0 8px 10px -3px rgb(0 0 0 / 0.3);
   --tw-shadow-colored: 0 12px 25px -3px var(--tw-shadow-color), 0 8px 10px -3px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
@@ -781,8 +786,8 @@ video {
   outline-width: 4px;
 }
 
-.outline-violet {
-  outline-color: #4a0d67;
+.outline-darkGray {
+  outline-color: #555555;
 }
 
 .blur {
